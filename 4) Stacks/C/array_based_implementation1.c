@@ -24,7 +24,7 @@ struct ArrayStack *CreateStack()
 int IsEmptyStack(struct ArrayStack *S)
 {
 	// if the condition is true then 1 is returned else 0 is returned.
-	return (S->top == -1); 
+	return (S->top == -1);
 }
 int IsFullStack(struct ArrayStack *S)
 {
@@ -82,7 +82,6 @@ void Print(struct ArrayStack *S)
 int main()
 {
 	struct ArrayStack *A = CreateStack();
-	
 	Push(A, 10);
 	Print(A);
     Push(A, 20);
@@ -99,16 +98,15 @@ int main()
     Print(A);
     DeleteStack(A);
 
-
 	return 0;
 }
 
 /*
-Stack is : 10 
-Stack is : 10 20 
-Stack is : 10 20 30 
-Stack is : 10 20 30 40 
-Stack is : 10 20 30 
-Stack is : 10 20 
+Stack is : 10
+Stack is : 10 20
+Stack is : 10 20 30
+Stack is : 10 20 30 40
+Stack is : 10 20 30
+Stack is : 10 20
 Stack is : 10
 */
